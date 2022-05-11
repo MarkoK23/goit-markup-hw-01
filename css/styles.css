@@ -3,7 +3,6 @@ body {
   letter-spacing: 0.03em;
   font-weight: 400;
   background-color: #ffffff;
-  
 }
 
 :root {
@@ -19,15 +18,28 @@ body {
   list-style: none;
 }
 
+.decoration {
+  text-decoration: none;
+}
+
+.hidden-title {
+  display: none;
+}
+
 /* шапка */
 header {
   color: var(--basic-color);
   background-color: #ffffff;
+
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
 }
+
 /* logo */
 .logo {
   color: var(--basic-color);
-  font-family: Raleway, cursive;
+  font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -46,7 +58,6 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.14;
-  
 }
 /* nav */
 .site-nav .link {
@@ -56,6 +67,7 @@ header {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -66,11 +78,10 @@ header {
 
 /* header contacts */
 .contacts .contacts-list {
-  
   color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
@@ -83,12 +94,11 @@ header {
 
 .section-title {
   color: var(--basic-color);
- 
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  
 }
 /* hero */
 .hero {
@@ -96,7 +106,6 @@ header {
 }
 
 .hero-title {
-  
   color: var(--hero-title-color);
   font-weight: 900;
   font-size: 44px;
@@ -106,23 +115,24 @@ header {
 }
 /* button */
 .button {
-   background-color: var(--button-bkg-color);
+  background-color: var(--button-bkg-color);
   color: var(--hero-title-color);
 
   padding: 10px 32px;
- 
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
+  cursor: pointer;
 }
 .hero.button:hover,
 .hero.button:focus {
   color: gray;
 }
-
 
 /* benefits */
 
@@ -134,14 +144,12 @@ header {
 }
 .benefits-text {
   color: var(--text-color);
-  
+
   font-size: 14px;
   line-height: 1.71;
 }
+
 /* work */
-
-
-
 
 /* team */
 .team {
@@ -149,18 +157,15 @@ header {
 }
 .section .member {
   color: var(--basic-color);
-  
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
-
 }
 .section .specialty {
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.19;
-
 }
 
 /* footer */
@@ -169,20 +174,19 @@ footer {
 }
 footer > .logo {
   color: var(--hero-title-color);
-  font-family: 'Raleway';
+  font-family: "Raleway";
 
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
+.logo .footer-logo {
+  color: var(--accent-color);
+}
+
 footer > .logo:hover,
 footer > .logo:focus {
   color: #757575;
-}
-/* footer-logo */
-.footer-color-logo {
-  color: var(--accent-color);
-  font-family: Raleway;
 }
 
 .adress .location {
@@ -191,24 +195,54 @@ footer > .logo:focus {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
-
 }
 .adress .location:hover,
 .adress .location:focus {
   color: var(--accent-color);
 }
 .adress .contacts {
-    
   font-size: 14px;
   line-height: 1.71;
-  text-decoration: none;  
+  text-decoration: none;
 
   color: rgba(255, 255, 255, 0.6);
-
-
 }
 
 .adress .contacts:hover,
 .adress .contacts:focus {
   color: var(--accent-color);
+}
+
+/* Portfolio */
+
+/* button */
+.filtr.button {
+  color: var(--basic-color);
+  background: #f5f4fa;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.filtr.button:hover,
+.filtr.button:focus {
+  color: var(--hero-title-color);
+  background-color: var(--button-bkg-color);
+}
+.projects .title {
+  color: var(--basic-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+}
+
+.projects .text {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.88;
 }
